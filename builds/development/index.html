@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Umich jQuery Mobile Web Apps</title>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquerymobile.js"></script>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/jquerymobile.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+  <!-- page: home -->
+  <section data-role="page" id="home">
+  	<article data-role="content">
+      <img src="images/viewsourcelogo.png" alt="View Source Logo">
+      <div data-role="controlgroup">
+	      <a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all ui-btn-b">Facebook</a>
+	      <a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-left ui-corner-all ui-btn-b">YouTube</a>
+	      <a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-left ui-corner-all ui-btn-b">Flickr</a>
+	      <a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-left ui-corner-all ui-btn-b">Twitter</a>
+      </div>
+  	</article><!-- content -->	
+  </section><!-- home -->
+
+  <!-- page: blog -->
+  <section data-role="page" class="header_default footer_default" id="blog" data-title="Blog">	
+  	<div data-role="content" id="postlist"></div><!-- content -->
+  </section><!-- blog page -->
+
+  <!-- page: blogpost -->
+  <section data-role="page" class="header_default footer_default" id="blogpost" data-title="Post">
+  	<div data-role="content">
+  		<div id="mypost"></div>
+  	</div>
+  </section><!-- blogposts page -->
+
+  <!-- page: video -->
+  <section id="videos" data-role="page" data-title="Videos" class="header_default footer_default">
+  	<div data-role="content">
+  		<div class="ui-grid-a" id="videoList"></div>
+  	</div><!-- content -->
+  </section><!-- video page -->
+
+  <!-- page: videoplayer -->
+  <section id="videoplayer" data-role="page" data-title="Player" class="header_default footer_default">
+  	<div data-role="content">
+  		<div id="myplayer"></div>
+  	</div><!-- content -->
+  </section><!-- videoplayer page -->
+
+  <!-- page: photo -->
+  <section id="photos" data-role="page" data-title="Photo Grid" class="header_default footer_default">
+  	<div data-role="content">
+  		<div class="ui-grid-c" id="photolist"></div>
+  	</div><!-- content -->
+  </section><!-- photo page -->
+
+  <!-- page: showphoto -->
+  <section id="showphoto" data-role="page">
+  	<div data-role="content">
+  		<div id="myphoto"></div>
+  	</div><!-- content -->
+  </section><!-- showphoto page -->
+
+  <!-- page: tweets -->
+  <section id="tweets" data-role="page" data-title="Tweets" class="header_default footer_default">
+  	<div data-role="content" id="tweetlist">
+  	</div><!-- content -->
+  </section><!-- show tweets -->
+  
+   <!-- page: dialog -->
+  <section id="mydialog" data-role="dialog">
+  	<header data-role="header">
+  		<h1>More Info</h1>
+  	</header>
+  	<div data-role="content">
+  		<h1>About iViewSource</h1>
+  		<p>iViewSource is Ray Villalobos' blog with information on front-end and related technologies like JavaScript, PHP and WordPress. For more information, visit <a href="http://iviewsource.com">iviewsource.com</a></p>
+  	</div><!-- content -->
+  </section><!-- dialog -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
